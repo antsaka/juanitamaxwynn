@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Madimi One', sans-serif;
+    background-color: #f0f0f0; /* warna latar belakang */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Menggunakan height 100vh agar konten tetap berada di tengah vertikal */
+  }
+  
+  .profile {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile img {
+    max-width: 150px; /* Lebar maksimum gambar profil */
+    width: 100%; /* Menyesuaikan lebar gambar profil dengan lebar konten */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border-radius: 50%; /* bentuk lingkaran */
+    border: 3px solid #fff; /* pinggiran putih */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* bayangan halus */
+  }
+  
+  .profile h1 {
+    margin-top: 5px;
+    font-size: 24px; /* ukuran huruf nama */
+    color: #333; /* warna nama */
+  }
+  
+  .profile p {
+    font-size: 18px; /* ukuran huruf deskripsi */
+    color: #666; /* warna deskripsi */
+  }
+  
+  .link {
+    text-align: center;
+    width: 100%;
+    display: flex; /* Mengubah tata letak link menjadi flex */
+    flex-direction: column; /* Menjadikan tata letak kolom */
+  }
+  
+  .link a {
+    display: inline-block; /* Mengubah link menjadi inline-block */
+    margin: 5px; /* Jarak antara link */
+    text-decoration: none;
+    background-color: #007bff; /* warna latar tombol */
+    color: #fff; /* warna teks tombol */
+    padding: 10px;
+    border-radius: 5px; /* sudut tombol */
+    transition: background-color 0.3s; /* transisi saat dihover */
+  }
+  
+  .link a:hover {
+    background-color: #0056b3; /* warna latar saat dihover */
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: auto; /* Menggunakan margin-top auto agar footer berada di tengah vertikal */
+    font-style: italic; /* gaya huruf miring */
+    color: #888; /* warna teks footer */
+  }
+  
+  /* Media queries untuk perangkat mobile */
+  @media (max-width: 600px) {
+    .profile img {
+      max-width: 100px; /* Mengurangi lebar gambar profil di perangkat mobile */
+    }
+  
+    .profile h1 {
+      font-size: 20px; /* Mengurangi ukuran huruf nama di perangkat mobile */
+    }
+  
+    .profile p {
+      font-size: 16px; /* Mengurangi ukuran huruf deskripsi di perangkat mobile */
+    }
+  
+    .link a {
+      margin: 5px; /* Mengurangi jarak antara tautan di perangkat mobile */
+      padding: 8px 15px; /* Mengurangi padding tombol di perangkat mobile */
+      font-size: 14px; /* Mengurangi ukuran teks tombol di perangkat mobile */
+    }
+  
+    footer {
+      font-size: 12px; /* Mengurangi ukuran teks footer di perangkat mobile */
+    }
+  }
+  
